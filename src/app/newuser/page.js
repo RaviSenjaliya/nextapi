@@ -8,6 +8,7 @@ export default function page() {
     name: "",
     age: "",
   });
+
   const mychange = (e) => {
     setdata({ ...data, [e.target.name]: e.target.value });
   };

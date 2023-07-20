@@ -17,6 +17,7 @@ export function GET(req, res) {
 
 export async function PUT(req, res) {
   let data = await req.json();
+  console.log(`======> ${data.id}`);
   data.id = res.params.id;
   if (!data.id || !data.name || !data.age) {
     return NextResponse.json({ result: "oppps....." });

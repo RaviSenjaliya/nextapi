@@ -15,6 +15,8 @@ export default async function page() {
         return (
           <>
             <Link href={`/users/${val.id}`}>{val.name}</Link>
+            <br />
+            <Link href={`/users/${val.id}/edituser`}>Edit</Link>
             <hr />
           </>
         );
